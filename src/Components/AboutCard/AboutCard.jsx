@@ -1,10 +1,18 @@
 import React from 'react';
 import '../AboutCard/AboutCard.css';
 import WrapperImg from '../../assets/siteimg/AboutCard1.png';
-import WrapperImg2 from '../../assets/siteimg/AboutCard2.png'; 
+import WrapperImg2 from '../../assets/siteimg/AboutCard2.png'; // Aslida boshqa rasmni import qilish
+import WrapperImg3 from '../../assets/siteimg/AboutCard3.png'; // Uchinchi rasmni import qilish
 
-const AboutCard = ({ images1 }) => {
-  const imageSrc = images1 ? WrapperImg : WrapperImg2;
+const AboutCard = ({ images1, images3 }) => {
+  let imageSrc;
+  if (images3) {
+    imageSrc = WrapperImg3;
+  } else if (images1) {
+    imageSrc = WrapperImg;
+  } else {
+    imageSrc = WrapperImg2;
+  }
 
   return (
     <div className='wrapper'>
