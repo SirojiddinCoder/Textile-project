@@ -1,7 +1,7 @@
 import React from 'react';
 import '../AboutCard/AboutCard.css';
 import WrapperImg from '../../assets/siteimg/AboutCard1.png';
-import WrapperImg2 from '../../assets/siteimg/AboutCard2.png'; // Aslida boshqa rasmni import qilish
+import WrapperImg2 from '../../assets/siteimg/AboutCard2.png'; 
 
 const AboutCard = ({ images1 }) => {
   const imageSrc = images1 ? WrapperImg : WrapperImg2;
